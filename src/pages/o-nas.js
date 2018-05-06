@@ -2,8 +2,8 @@ import React from "react"
 
 export default ({ data }) => (
     <React.Fragment>
-        <h1>{data.allContentJson.edges[0].node.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: data.allContentJson.edges[0].node.content }} />
+        <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.content }} />
     </React.Fragment>
 );
 
