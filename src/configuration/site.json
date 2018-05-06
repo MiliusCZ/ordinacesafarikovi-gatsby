@@ -1,4 +1,12 @@
 {
-  "title": "default-title-new",
-  "disclaimer": "My disclaimer"
+  "title": "Zubní ordinace Šafaříkovi",
+  "disclaimer": "2018",
+  "phone": "222 510 526",
+  "email": "info@ordinacesafarikovi.cz",
+  "address": {
+    "name": "todoname",
+    "street": "todostreet",
+    "city": "todocity",
+    "zip": "todozip"
+  }
 }

@@ -15,14 +15,12 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Disclaimer, name: disclaimer, widget: string}
-
-  - label: "Trips"
-    name: "trips"
-    folder: "src/data/trips"
-    create: true
-    format: "json"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Start Date", name: "startDate", widget: "datetime"}
-      - {label: "End Date", name: "endDate", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+          - {label: Phone, name: phone, widget: string}
+          - {label: E-mail, name: email, widget: string}
+          - {label: Address, name: address, widget: object, fields: {
+            - {label: "Name", name: "name", widget: "string"}
+            - {label: "Street", name: "street", widget: "string"}
+            - {label: "City", name: "city", widget: "string"}
+            - {label: "Postal Code", name: "zip", widget: "string"}
+            }
+          }

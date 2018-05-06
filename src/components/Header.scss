@@ -1,0 +1,37 @@
+header {
+	height: 80px;	
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+        margin-left: 20px;
+    }
+}
+
+.siteHeader {
+	a {
+		color: white;
+	}
+}
+
+.siteHeaderImage {
+	margin-right: 15px;
+	margin-left: 10px;
+	
+	img {
+        height: 75px;
+        margin: 0;
+	}
+}
+
+.topImage {
+	height: 320px;	
+}
