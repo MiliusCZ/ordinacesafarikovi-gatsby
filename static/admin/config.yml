@@ -25,17 +25,20 @@ collections:
             - {label: "Street", name: "street", widget: "string"}
             - {label: "City", name: "city", widget: "string"}
             - {label: "Postal Code", name: "zip", widget: "string"}
+  - label: "Pages"
+    name: "pages"
+    files:
       - label: "About us page"
         name: "about-us"
-        file: "src/content/about-us.json"
+        file: "src/content/about-us.md"
         fields: 
           - {label: Key, name: key, widget: hidden, default: "about-us"}
           - {label: Title, name: title, widget: string}
-          - {label: Content, name: content, widget: markdown}
+          - {label: Content, name: body, widget: markdown}
       - label: "Services page"
         name: "services"
-        file: "src/content/services.json"
+        file: "src/content/services.md"
         fields: 
           - {label: Key, name: key, widget: hidden, default: "services"}
           - {label: Title, name: title, widget: string}
-          - {label: Content, name: content, widget: markdown}
+          - {label: Content, name: body, widget: markdown}
