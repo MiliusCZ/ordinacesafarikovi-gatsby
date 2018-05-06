@@ -17,10 +17,9 @@ collections:
           - {label: Disclaimer, name: disclaimer, widget: string}
           - {label: Phone, name: phone, widget: string}
           - {label: E-mail, name: email, widget: string}
-          - {label: Address, name: address, widget: object, fields: {
+          - {label: Address, name: address, widget: object, fields: 
             - {label: "Name", name: "name", widget: "string"}
             - {label: "Street", name: "street", widget: "string"}
             - {label: "City", name: "city", widget: "string"}
             - {label: "Postal Code", name: "zip", widget: "string"}
-            }
           }
