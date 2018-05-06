@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections: 
+  - label: "Configuration"
+    name: "config"
+    files:
+      - label: "Site configuration"
+        name: "site-config"
+        file: "src/configuration/site.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Disclaimer, name: disclaimer, widget: string}
+
+  - label: "Trips"
+    name: "trips"
+    folder: "src/data/trips"
+    create: true
+    format: "json"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Start Date", name: "startDate", widget: "datetime"}
+      - {label: "End Date", name: "endDate", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
