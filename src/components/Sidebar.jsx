@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import Link from "gatsby-link";
 
 import "./Sidebar.scss";
 
@@ -20,6 +21,6 @@ export const Sidebar = ({ data }) => (
             <a href={`mailto:${data.email}`}>{data.email}</a>
         </div>
 
-        <h3><a href="contacts">contacts</a></h3>
+        <h3><Link to="/kontakty/">kontakty</Link></h3>
     </div>
 );

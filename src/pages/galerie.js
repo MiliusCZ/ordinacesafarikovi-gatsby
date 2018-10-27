@@ -1,3 +1,4 @@
 import React from "react"
+import Layout from "../components/Layout";
 
-export default () => <div>Galerie</div>
+export default () => <Layout>Galerie</Layout>

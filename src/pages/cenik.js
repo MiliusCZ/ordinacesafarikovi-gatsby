@@ -1,3 +1,4 @@
-import React from "react"
+import React from "react";
+import Layout from "../components/Layout";
 
-export default () => <div>Cenik</div>
+export default () => <Layout>Cenik</Layout>
