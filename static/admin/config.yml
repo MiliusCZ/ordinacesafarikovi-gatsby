@@ -42,3 +42,10 @@ collections:
           - {label: Key, name: key, widget: hidden, default: "services"}
           - {label: Title, name: title, widget: string}
           - {label: Content, name: body, widget: markdown}
+      - label: "Price list page"
+        name: "pricelist"
+        file: "src/content/pricelist.md"
+        fields: 
+          - {label: Key, name: key, widget: hidden, default: "pricelist"}
+          - {label: Title, name: title, widget: string}
+          - {label: Content, name: body, widget: markdown}
