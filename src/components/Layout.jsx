@@ -33,7 +33,7 @@ export default ({ children, data }) => (
       }
     }
     `}
-     render={data => { console.log(data); return (
+     render={data => (
     <div className="mainContainer">
         <Header title={data.configurationJson.title} navigation={data.allSitePage.edges} />
         <div className="content">
@@ -42,5 +42,5 @@ export default ({ children, data }) => (
         </div>
         <Footer disclaimer={data.configurationJson.disclaimer} />
     </div>
-  )}}/>
+  )}/>
 );
