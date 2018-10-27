@@ -23,7 +23,7 @@ export const Header = ({ title, navigation }) => (
 );
 
 const navigationTitles = {
-    '/cenik/': 'Ceník',
+//  '/cenik/': 'Ceník',
     '/tym/': 'Tým',
     '/o-nas/': 'O nás',
     '/galerie/': 'Galerie',
