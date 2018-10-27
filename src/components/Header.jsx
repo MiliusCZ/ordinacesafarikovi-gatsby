@@ -5,11 +5,11 @@ import "./Header.scss";
 
 export const Header = ({ title, navigation }) => (
     <React.Fragment>
-        <header>
+        <header className="siteHeader">
             <div className="siteHeaderImage">
                 <Link to="/"><img src="/img/logo_black.png" alt="Logo" /></Link>
             </div>
-            <div className="siteHeader">
+            <div className="siteTitle">
                 <Link to="/">{title}</Link>
             </div>
             <nav>

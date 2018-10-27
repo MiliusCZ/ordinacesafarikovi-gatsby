@@ -1,4 +1,4 @@
-header {
+header.siteHeader {
 	height: 80px;	
     background-color: black;
     display: flex;
@@ -16,7 +16,7 @@ nav {
     }
 }
 
-.siteHeader {
+.siteTitle {
 	a {
 		color: white;
 	}
