@@ -17,6 +17,8 @@
     "gatsby-transformer-json": "^2.1.4",
     "gatsby-transformer-remark": "^2.1.9",
     "netlify-cms": "^2.1.3",
-    "node-sass": "^4.9.4"
+    "node-sass": "^4.9.4",
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.17"
   }
 }
