@@ -6,6 +6,12 @@
       "photo": "/img/šafaříkmiroslavmladší.jpg",
       "specialization": "zuby",
       "bio": "Some **bio**"
+    },
+    {
+      "name": "Růžena Šafaříková",
+      "photo": "/img/šafaříkovárůžena.jpg",
+      "specialization": "taky zuby",
+      "bio": "Another bio"
     }
   ]
 }
