@@ -42,3 +42,17 @@ collections:
           - {label: Key, name: key, widget: hidden, default: "services"}
           - {label: Title, name: title, widget: string}
           - {label: Content, name: body, widget: markdown}
+      - label: "Team"
+        name: "team"
+        file: "src/content/team.json"
+        fields:
+          - {label: Key, name: key, widget: hidden, default: "team"}
+          - {label: Title, names: title, widget: string, defualt: "Tým"}
+          - label: TeamMebmers 
+            name: teamMembers 
+            widget: list
+            fields:
+              - {label: "Full Name", name: fullName, widget: string}
+              - {label: Photo, name: photo, widget: image}
+              - {label: Specialization, name: specialization, widget: string}
+              - {label: Bio, name: bio, widget: markdown}
