@@ -13,7 +13,7 @@ export const Header = ({ title, navigation }) => (
                 <Link to="/">{title}</Link>
             </div>
             <nav>
-                {navigation.map((item) => navigationTitles[item.node.path] && <Link key={item.node.path} to={item.node.path}>{navigationTitles[item.node.path]}</Link>)}
+                {navigation.map((item) => <Link key={item.key} to={item.path}>{item.title}</Link>)}
             </nav>
         </header>
         <div className="topImage">
@@ -21,12 +21,3 @@ export const Header = ({ title, navigation }) => (
         </div>
     </React.Fragment>
 );
-
-const navigationTitles = {
-//  '/cenik/': 'Ceník',
-    '/tym/': 'Tým',
-    '/o-nas/': 'O nás',
-    '/galerie/': 'Galerie',
-    '/sluzby/': 'Poskytované výkony',
-    '/kontakty/': 'Kontakty'
-}

@@ -2,6 +2,7 @@
   "key": "teamMembers",
   "title": "Náš tým",
   "showInMenu": true,
+  "path": "/tym/",
   "teamMembers": [
     {
       "name": "Miroslav Safarik",

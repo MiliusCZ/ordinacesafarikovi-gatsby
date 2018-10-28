@@ -34,7 +34,8 @@ collections:
         fields: 
           - {label: Key, name: key, widget: hidden, default: "about-us"}
           - {label: Title, name: title, widget: string}
-          - {label: ShowInMenu, name: showInMenu, widget: boolean, default: true}
+          - {label: Path, name: path, widget: hidden, default: "/o-nas/"}
+          - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
           - {label: Content, name: body, widget: markdown}
       - label: "Services page"
         name: "services"
@@ -42,7 +43,8 @@ collections:
         fields: 
           - {label: Key, name: key, widget: hidden, default: "services"}
           - {label: Title, name: title, widget: string}
-          - {label: ShowInMenu, name: showInMenu, widget: boolean, default: true}
+          - {label: Path, name: path, widget: hidden, default: "/sluzby/"}
+          - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
           - {label: Content, name: body, widget: markdown}
       - label: "Team"
         name: "team"
@@ -50,7 +52,8 @@ collections:
         fields:
           - {label: Key, name: key, widget: hidden, default: "team"}
           - {label: Title, name: title, widget: string, defualt: "Tým"}
-          - {label: ShowInMenu, name: showInMenu, widget: boolean, default: true}
+          - {label: Path, name: path, widget: hidden, default: "/tym/", }
+          - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
           - label: "Team Members"
             name: "teamMembers"
             widget: list
