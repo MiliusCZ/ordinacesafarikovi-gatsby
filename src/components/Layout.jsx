@@ -8,7 +8,7 @@ import { StaticQuery, graphql } from "gatsby";
 
 import "./Layout.scss";
 
-const LayoutComponent = ({ children, data }) => (
+const LayoutComponent = ({ data, children }) => (
   <div className="mainContainer">
     <Header title={data.configurationJson.title} navigation={getNavigationData(data.allMarkdownRemark.edges, data.allContentJson.edges)} />
     <div className="content">
@@ -35,7 +35,7 @@ const getNavigationData = (contentPages, dataPages) => {
   return contentNavigation.concat(dataNavigation);
 }
 
-export default ({ children, data }) => (
+export default props => (
   <StaticQuery query={graphql`
     query ConfigQuery {
       configurationJson {
@@ -76,6 +76,6 @@ export default ({ children, data }) => (
         }
       }
     `}
-    render={(data, children) => <LayoutComponent data={data} children={children} />}
+    render={data => <LayoutComponent data={data} {...props} />}
   />
 );

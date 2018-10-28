@@ -5,15 +5,15 @@
   "path": "/tym/",
   "teamMembers": [
     {
-      "name": "Miroslav Safarik",
+      "name": "MUDr. Miroslav Šafařík - vedoucí lékař",
       "photo": "/img/šafaříkmiroslavmladší.jpg",
-      "specialization": "zuby",
+      "specialization": "stomatochirurgie a implantologie",
       "bio": "Some **bio**"
     },
     {
-      "name": "Růžena Šafaříková",
+      "name": "MUDr. Růžena Šafaříková",
       "photo": "/img/šafaříkovárůžena.jpg",
-      "specialization": "taky zuby",
+      "specialization": "estetická stomatologie a endodoncie",
       "bio": "Another bio"
     }
   ]
