@@ -2,12 +2,12 @@ import "netlify-cms/dist/cms.css";
 
 import CMS from 'netlify-cms';
 
-const TeamMebmerPreview = ({ entry, widgetFor }) => (
+const TeamMebmerPreview = ({ widgetsFor }) => (
   <div>
-      {entry.getIn(['title'])}
-      <hr />
-      {widgetFor('body')}
+      {widgetsFor('teamMembers').map(member => (
+        <div><h3>{member.getIn('fields', 'name')}</h3></div>
+      ))}
   </div>  
 );
 
-CMS.registerPreviewTemplate('team', TeamMemberPreview);
+CMS.registerPreviewTemplate('team', TeamMebmerPreview);
