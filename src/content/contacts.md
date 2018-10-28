@@ -1,9 +1,8 @@
 ---
 key: contacts
 title: Konktakty
-path: /contacts/
-showInMenu: true
 path: "/kontakty/"
+showInMenu: true
 ---
 ## Kde nás najdete
 
