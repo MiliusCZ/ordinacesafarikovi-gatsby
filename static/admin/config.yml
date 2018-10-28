@@ -43,7 +43,7 @@ collections:
         fields: 
           - {label: Key, name: key, widget: hidden, default: "contacts"}
           - {label: Title, name: title, widget: string}
-          - {label: Path, name: path, widget: hidden, default: "/contacts/"}
+          - {label: Path, name: path, widget: hidden, default: "/kontakty/"}
           - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
           - {label: Content, name: body, widget: markdown}
       - label: "Services page"
