@@ -37,6 +37,15 @@ collections:
           - {label: Path, name: path, widget: hidden, default: "/o-nas/"}
           - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
           - {label: Content, name: body, widget: markdown}
+      - label: "Contacts page"
+        name: "contacts"
+        file: "src/content/contacts.md"
+        fields: 
+          - {label: Key, name: key, widget: hidden, default: "contacts"}
+          - {label: Title, name: title, widget: string}
+          - {label: Path, name: path, widget: hidden, default: "/contacts/"}
+          - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
+          - {label: Content, name: body, widget: markdown}
       - label: "Services page"
         name: "services"
         file: "src/content/services.md"
