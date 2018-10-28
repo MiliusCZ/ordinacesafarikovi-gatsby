@@ -1,1 +1,8 @@
-{}
+[
+    {
+        "name": "Test",
+        "image": "Test",
+        "specialization": "Test",
+        "bio": "Test"
+    }
+]

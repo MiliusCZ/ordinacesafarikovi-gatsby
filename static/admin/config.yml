@@ -47,9 +47,9 @@ collections:
         file: "src/content/team.json"
         fields:
           - {label: Key, name: key, widget: hidden, default: "team"}
-          - {label: Title, names: title, widget: string, defualt: "Tým"}
-          - label: TeamMebmers 
-            name: teamMembers 
+          - {label: Title, name: title, widget: string, defualt: "Tým"}
+          - label: "Team Members"
+            name: "teamMembers"
             widget: list
             fields:
               - {label: Name, name: name, widget: string}
