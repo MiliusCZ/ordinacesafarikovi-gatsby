@@ -6,7 +6,7 @@ showInMenu: true
 ---
 ## Kde nás najdete
 
-TODO: mapa
+<iframe width="540" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=cs&amp;q=Uruguayská 3&#10;+&#10;Praha 2, 120 00&amp;output=embed"></iframe>
 
 ## Jak se k nám dostanete
 ### Metrem
