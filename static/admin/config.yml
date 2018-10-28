@@ -52,7 +52,7 @@ collections:
             name: teamMembers 
             widget: list
             fields:
-              - {label: "Full Name", name: fullName, widget: string}
+              - {label: "Full Name", name: name, widget: string}
               - {label: Photo, name: photo, widget: image}
               - {label: Specialization, name: specialization, widget: string}
               - {label: Bio, name: bio, widget: markdown}
