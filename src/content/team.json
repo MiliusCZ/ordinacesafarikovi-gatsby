@@ -1,18 +1,19 @@
 {
-    "key": "teamMembers",
-    "title": "Náš tým",
-    "teamMembers": [
-        {
-            "name": "Miroslav Safarik",
-            "photo": "/img/šafaříkmiroslavmladší.jpg",
-            "specialization": "zuby",
-            "bio": "Some **bio**"
-        },
-        {
-            "name": "Růžena Šafaříková",
-            "photo": "/img/šafaříkovárůžena.jpg",
-            "specialization": "taky zuby",
-            "bio": "Another bio"
-        }
-    ]
+  "key": "teamMembers",
+  "title": "Náš tým",
+  "showInMenu": true,
+  "teamMembers": [
+    {
+      "name": "Miroslav Safarik",
+      "photo": "/img/šafaříkmiroslavmladší.jpg",
+      "specialization": "zuby",
+      "bio": "Some **bio**"
+    },
+    {
+      "name": "Růžena Šafaříková",
+      "photo": "/img/šafaříkovárůžena.jpg",
+      "specialization": "taky zuby",
+      "bio": "Another bio"
+    }
+  ]
 }
