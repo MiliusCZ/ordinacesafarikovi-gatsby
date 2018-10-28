@@ -1,8 +1,11 @@
-[
+{
+  "title": "Náš tým",
+  "teamMembers": [
     {
-        "name": "Test",
-        "image": "Test",
-        "specialization": "Test",
-        "bio": "Test"
+      "name": "Miroslav Safarik",
+      "photo": "/img/šafaříkmiroslavmladší.jpg",
+      "specialization": "zuby",
+      "bio": "Some **bio**"
     }
-]
+  ]
+}
