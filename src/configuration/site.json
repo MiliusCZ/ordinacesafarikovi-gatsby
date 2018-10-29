@@ -8,5 +8,6 @@
     "street": "Uruguayská 3",
     "city": "Praha 2",
     "zip": "120 00"
-  }
+  },
+  "openingHours": "test"
 }

@@ -29,6 +29,7 @@ collections:
             - {label: "Street", name: "street", widget: "string"}
             - {label: "City", name: "city", widget: "string"}
             - {label: "Postal Code", name: "zip", widget: "string"}
+          - {label: "Opening hours", name: "openingHours", widget: "text"}
   - label: "Pages"
     name: "pages"
     files:

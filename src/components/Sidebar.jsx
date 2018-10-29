@@ -6,8 +6,17 @@ import "./Sidebar.scss";
 export const Sidebar = ({ data }) => (
     <div className="sidebar">
         <h2>Ordinační hodiny</h2>
-        <div>
-            opening-hours
+        <div className="openingHours">
+            <div>
+                Pondělí<br />
+                Úterý<br />
+                Středa<br />
+                Čtvrtek<br />
+                Pátek
+            </div>
+            <div>
+                {data.openingHours}
+            </div>
         </div>
 
         <h2>Kontakty</h2>

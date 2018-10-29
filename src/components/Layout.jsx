@@ -49,6 +49,7 @@ export default props => (
         disclaimer
         phone
         email
+        openingHours
       }
       allContentJson(
         filter: { showInMenu: { eq: true }}
