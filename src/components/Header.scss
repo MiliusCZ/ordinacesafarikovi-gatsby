@@ -4,15 +4,15 @@ header.siteHeader {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
 
-nav {
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end;
-
-    a {
-        margin-left: 20px;
+    nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    
+        a {
+            margin-left: 20px;
+        }
     }
 }
 
