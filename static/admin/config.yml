@@ -71,3 +71,11 @@ collections:
               - {label: Photo, name: photo, widget: image}
               - {label: Specialization, name: specialization, widget: string}
               - {label: Bio, name: bio, widget: markdown}
+  - label: "News"
+    name: "news"
+    folder: "src/content/news"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
