@@ -1,15 +1,8 @@
 import React from "react";
 import Layout from "../components/Layout";
+import { NewsItem } from "../components/NewsItem";
 
 import { graphql } from 'gatsby';
-
-
-const NewsItem = ({ title, body}) => (
-    <>
-        <h3>{title}</h3>
-        <div dangerouslySetInnerHTML={{ __html: body }} />
-    </>
-);
 
 export default ({ data }) => {
     const news = data.allMarkdownRemark.edges;
@@ -23,16 +16,20 @@ export default ({ data }) => {
 
 export const query = graphql`
   query NewsQuery {
-    allMarkdownRemark(filter: {fields: {isNews: {eq: true}}}) {
+    allMarkdownRemark(
+      filter: {fields: {isNews: {eq: true}}},
+      sort: {fields: [frontmatter___date], order: DESC},
+    ) {
       edges {
         node {
           frontmatter {
             title
+            date
           }
           id
           html
         }
       }
     }
-  }
+  }  
 `;

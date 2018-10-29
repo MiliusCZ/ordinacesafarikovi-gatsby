@@ -1,4 +1,41 @@
-import React from "react"
-import Layout from "../components/Layout";
+import React from "react";
+import Link from "gatsby-link";
 
-export default () => <Layout>Hello world!</Layout>
+import Layout from "../components/Layout";
+import { NewsItem } from "../components/NewsItem";
+
+import { graphql } from 'gatsby';
+
+export default ({ data }) => {
+    const news = data.allMarkdownRemark.edges;
+    return (
+        <Layout>
+            <h1>Vítejte</h1>
+            <p>Vítejte na stránkách zubní ordinace Šafaříkovi. </p>
+            <h2>Aktuality</h2>
+            {news.map(newsEntry => <NewsItem key={newsEntry.node.id} title={newsEntry.node.frontmatter.title} body={newsEntry.node.html} />)}
+            <Link to="/novinky">zobrazit všechny aktuality</Link>
+        </Layout>
+    )
+}
+
+export const query = graphql`
+  query TopNewsQuery {
+    allMarkdownRemark(
+      filter: {fields: {isNews: {eq: true}}},
+      sort: {fields: [frontmatter___date], order: DESC},
+      limit: 1
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date
+          }
+          id
+          html
+        }
+      }
+    }
+  }  
+`;
