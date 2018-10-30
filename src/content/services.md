@@ -3,6 +3,7 @@ key: services
 title: Poskytované výkony
 showInMenu: true
 path: "/sluzby/"
+priority: 2
 ---
 ## Záchovná stomatologie
 - vyšetření a stanovení léčebného plánu

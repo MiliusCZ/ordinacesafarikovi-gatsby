@@ -3,6 +3,7 @@ key: contacts
 title: Konktakty
 path: /kontakty/
 showInMenu: true
+priority: 4
 ---
 ## Kde nás najdete
 

@@ -21,6 +21,8 @@ collections:
           - {label: Disclaimer, name: disclaimer, widget: string}
           - {label: Phone, name: phone, widget: string}
           - {label: E-mail, name: email, widget: string}
+          - {label: Web, name: web, widget: string}
+          - {label: Facebook, name: facebook, widget: string}
           - label: Address
             name: address
             widget: object
@@ -39,6 +41,7 @@ collections:
         fields: 
           - {label: Key, name: key, widget: hidden, default: "about-us"}
           - {label: Title, name: title, widget: string}
+          - {label: Priority, name: priority, widget: number, valueType: "int"}
           - {label: Path, name: path, widget: hidden, default: "/o-nas/"}
           - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
           - {label: Content, name: body, widget: markdown}
@@ -48,6 +51,7 @@ collections:
         fields: 
           - {label: Key, name: key, widget: hidden, default: "contacts"}
           - {label: Title, name: title, widget: string}
+          - {label: Priority, name: priority, widget: number, valueType: "int"}
           - {label: Path, name: path, widget: hidden, default: "/kontakty/"}
           - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
           - {label: Content, name: body, widget: markdown}
@@ -57,6 +61,7 @@ collections:
         fields: 
           - {label: Key, name: key, widget: hidden, default: "services"}
           - {label: Title, name: title, widget: string}
+          - {label: Priority, name: priority, widget: number, valueType: "int"}
           - {label: Path, name: path, widget: hidden, default: "/sluzby/"}
           - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
           - {label: Content, name: body, widget: markdown}
@@ -66,6 +71,7 @@ collections:
         fields: 
           - {label: Key, name: key, widget: hidden, default: "gallery"}
           - {label: Title, name: title, widget: string}
+          - {label: Priority, name: priority, widget: number, valueType: "int"}
           - {label: Path, name: path, widget: hidden, default: "/galerie/"}
           - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
           - label: "Images"
@@ -78,6 +84,7 @@ collections:
         fields:
           - {label: Key, name: key, widget: hidden, default: "team"}
           - {label: Title, name: title, widget: string, defualt: "Tým"}
+          - {label: Priority, name: priority, widget: number, valueType: "int"}
           - {label: Path, name: path, widget: hidden, default: "/tym/", }
           - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
           - label: "Team Members"

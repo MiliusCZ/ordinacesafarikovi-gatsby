@@ -2,6 +2,7 @@
   "key": "gallery",
   "title": "Galerie",
   "path": "/galerie/",
+  "priority": 5,
   "showInMenu": true,
   "galleryImages": [
     "/img/IMGP3170.jpg",

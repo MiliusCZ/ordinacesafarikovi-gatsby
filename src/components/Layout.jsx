@@ -8,11 +8,11 @@ import { StaticQuery, graphql } from "gatsby";
 
 import "./Layout.scss";
 
-const LayoutComponent = ({ data, children }) => (
+const LayoutComponent = ({ data, children, full }) => (
   <div className="mainContainer">
     <Header title={data.configurationJson.title} navigation={getNavigationData(data.allMarkdownRemark.edges, data.allContentJson.edges)} />
     <div className="content">
-      <Sidebar data={data.configurationJson} />
+      <Sidebar data={data.configurationJson} full={full} />
       {children}
     </div>
     <Footer disclaimer={data.configurationJson.disclaimer} />
@@ -22,17 +22,17 @@ const LayoutComponent = ({ data, children }) => (
 const getNavigationData = (contentPages, dataPages) => {
   const dataNavigation = dataPages.map((item) => {
     return {
-      title: item.node.title, key: item.node.key, path: item.node.path
+      title: item.node.title, key: item.node.key, path: item.node.path, priority: item.node.priority
     }
   });
 
   const contentNavigation = contentPages.map((item) => {
     return {
-      title: item.node.frontmatter.title, key: item.node.frontmatter.key, path: item.node.frontmatter.path
+      title: item.node.frontmatter.title, key: item.node.frontmatter.key, path: item.node.frontmatter.path, priority: item.node.frontmatter.priority
     }
   });
 
-  return contentNavigation.concat(dataNavigation);
+  return contentNavigation.concat(dataNavigation).sort((a, b) => a.priority > b.priority);
 }
 
 export default props => (
@@ -45,6 +45,8 @@ export default props => (
           city
           zip
         }
+        web
+        facebook
         title
         disclaimer
         phone
@@ -59,6 +61,7 @@ export default props => (
               title
               key
               path
+              priority
             }
           }
         }
@@ -71,6 +74,7 @@ export default props => (
                 title
                 key
                 path
+                priority
               }
             }
           }

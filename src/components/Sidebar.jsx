@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 
 import "./Sidebar.scss";
 
-export const Sidebar = ({ data }) => (
+export const Sidebar = ({ data, full }) => (
     <div className="sidebar">
         <h2>Ordinační hodiny</h2>
         <div className="openingHours">
@@ -19,17 +19,33 @@ export const Sidebar = ({ data }) => (
             </div>
         </div>
 
-        <h2>Kontakty</h2>
-        <h3>Telefon</h3>
+        <h2>Telefon</h2>
         <div>
-            {data.phone}
+            <a href={`tel:${data.phone.replace(/\s/g,'')}`}>{data.phone}</a>
         </div>
 
-        <h3>E-mail</h3>
+        <h2>E-mail</h2>
         <div>
             <a href={`mailto:${data.email}`}>{data.email}</a>
         </div>
 
-        <h3><Link to="/kontakty/">kontakty</Link></h3>
+        {full && <><h2>Adresa</h2>
+        <div>
+            {data.address.name}<br />
+            {data.address.street}<br />
+            {data.address.city}, {data.address.zip}
+        </div></>}
+
+        {full && <><h2>Web</h2>
+        <div>
+            <a href={data.web}>{data.web}</a>
+        </div></>}
+
+        {full && <><h2>Facebook</h2>
+        <div>
+            <a href={data.facebook} target="_blank" rel="noopener noreferrer">{data.facebook}</a>
+        </div></>}
+
+        {!full && <Link to="/kontakty/">kontakty</Link>}
     </div>
 );

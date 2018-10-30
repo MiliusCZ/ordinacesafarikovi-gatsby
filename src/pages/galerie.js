@@ -8,8 +8,6 @@ export default ({ data }) => {
     const title = data.allContentJson.edges[0].node.title;
     const images = data.allContentJson.edges[0].node.galleryImages;
 
-    console.log(images);
-
     return (
         <Layout>
             <h1>{title}</h1>
