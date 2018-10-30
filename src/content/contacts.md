@@ -1,6 +1,6 @@
 ---
 key: contacts
-title: Konktakty
+title: Kontakty
 path: /kontakty/
 showInMenu: true
 priority: 4

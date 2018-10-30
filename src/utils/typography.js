@@ -20,7 +20,7 @@ const ordinaceSafarikoviTheme = {
         },
         'h1, h2': {
             'font-weight': 'normal',
-            'margin-bottom': '15px'
+            'margin-bottom': '15px',
         },
         'h3, h4': {
             margin: 0

@@ -5,47 +5,56 @@ import "./Sidebar.scss";
 
 export const Sidebar = ({ data, full }) => (
     <div className="sidebar">
-        <h2>Ordinační hodiny</h2>
-        <div className="openingHours">
-            <div>
-                Pondělí<br />
-                Úterý<br />
-                Středa<br />
-                Čtvrtek<br />
-                Pátek
+        <div className="block">
+            <h2>Ordinační hodiny</h2>
+            <div className="openingHours">
+                <div>
+                    Pondělí<br />
+                    Úterý<br />
+                    Středa<br />
+                    Čtvrtek<br />
+                    Pátek
             </div>
-            <div>
-                {data.openingHours}
+                <div>
+                    {data.openingHours}
+                </div>
             </div>
         </div>
 
-        <h2>Telefon</h2>
-        <div>
-            <a href={`tel:${data.phone.replace(/\s/g,'')}`}>{data.phone}</a>
+        <div className="block">
+            <h2>Telefon</h2>
+            <div>
+                <a href={`tel:${data.phone.replace(/\s/g, '')}`}>{data.phone}</a>
+            </div>
         </div>
 
-        <h2>E-mail</h2>
-        <div>
-            <a href={`mailto:${data.email}`}>{data.email}</a>
+        <div className="block">
+            <h2>E-mail</h2>
+            <div>
+                <a href={`mailto:${data.email}`}>{data.email}</a>
+            </div>
         </div>
 
-        {full && <><h2>Adresa</h2>
-        <div>
-            {data.address.name}<br />
-            {data.address.street}<br />
-            {data.address.city}, {data.address.zip}
-        </div></>}
+        {full && <div className="block"><h2>Adresa</h2>
+            <div>
+                {data.address.name}<br />
+                {data.address.street}<br />
+                {data.address.city}, {data.address.zip}
+            </div>
+        </div>}
 
-        {full && <><h2>Web</h2>
-        <div>
-            <a href={data.web}>{data.web}</a>
-        </div></>}
+        {full && <div className="block"><h2>Web</h2>
+            <div>
+                <a href={data.web}>{data.web}</a>
+            </div>
+        </div>}
 
-        {full && <><h2>Facebook</h2>
-        <div>
-            <a href={data.facebook} target="_blank" rel="noopener noreferrer">{data.facebook}</a>
-        </div></>}
+        {full && <div><h2>Facebook</h2>
+            <div>
+                <a href={data.facebook} target="_blank" rel="noopener noreferrer">{data.facebook}</a>
+            </div>
+        </div>}
 
-        {!full && <Link to="/kontakty/">kontakty</Link>}
+        {!full && <div className="allContacts"><Link to="/kontakty/">zobrazit všechny kontakty</Link></div>}
     </div>
 );
