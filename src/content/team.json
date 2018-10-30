@@ -1,21 +1,86 @@
 {
   "key": "teamMembers",
   "title": "Náš tým",
-  "showInMenu": true,
-  "priority": 3,
   "path": "/tym/",
+  "showInMenu": true,
   "teamMembers": [
     {
       "name": "MUDr. Miroslav Šafařík - vedoucí lékař",
       "photo": "/img/šafaříkmiroslavmladší.jpg",
       "specialization": "stomatochirurgie a implantologie",
-      "bio": "Some **bio**"
+      "bio": "V letech 2000 – 2007 absolvoval studium na 1. LF UK obor Stomatologie. Po promoci nastoupil na Stomatologickou kliniku Všeobecné fakultní nemocnice. Získával zkušenosti na odděleních záchovné stomatologie, parodontologie a onemocnění sliznic. Stěžejním pracovištěm mu byla ambulantní a lůžková stomatochirurgie, nyní Ústav čelistní a obličejové chirurgie VFN. Od r. 2009 působí v privátní praxi Ordinace Šafaříkovi, kde se postupně stává vedoucím lékařem.\r\n\nSpecializace: stomatochirurgie, implantologie\r\n\nVzdělání: průběžné postgraduální vzdělávání, osvědčení ČSK – Praktický zubní lékař a Stomatochirurg"
     },
     {
       "name": "MUDr. Růžena Šafaříková",
       "photo": "/img/šafaříkovárůžena.jpg",
       "specialization": "estetická stomatologie a endodoncie",
-      "bio": "Another bio"
+      "bio": "V roce 2007 promovala na 1. lékařské fakultě Univerzity Karlovy v Praze, obor Stomatologie. Absolvovala postgraduální kurz estetických rekonstrukcí dle Vaniniho a školení v dentální hygieně, účastní se odborných kongresů. Aktivně se podílela na rehabilitaci hendikepovaných dětí (Kontakt bB občanské sdružení pro studium, rehabilitaci a sport bez bariér) a v roce 2005 se účastnila stáže zaměřené na práci s postiženými klienty (USA, Boston).\r\n\n2007 – 2010  pracovala v soukromé zubní ordinaci Dentissimo pod vedením Doc. MUDr. Luďka Peřinky, CSc.\r\n\nOd r. 2010 částečný úvazek v privátní praxi Ordinace Šafaříkovi.\r\n\nSpecializace: estetická stomatologie a endodoncie"
+    },
+    {
+      "name": "MDDr. Tomáš Navrátil",
+      "photo": "/img/NavrátilTomáš.jpg",
+      "specialization": "záchovná stomatologie, endodoncie, protetika",
+      "bio": "Studium oboru zubní lékařství na 1.lékařské fakultě UK ukončil a promoval roku 2014. V témže roce začal pracovat v soukromé zubní ordinaci CENTRALDENT s.r.o. v Berouně. V létě roku 2017 se stává součástí naší ordinace. Od ledna 2015 je zařazen do odborné přípravy pro získání nadstavbového osvědčení PZL (praktický zubní lékař). Pravidelně se účastní vzdělávacích školení a seminářů."
+    },
+    {
+      "name": "MUDr. Margitta Šafaříková",
+      "photo": "/img/ŠafaříkováMargitta.jpg",
+      "specialization": "praktické zubní lékařství a dětská stomatologie",
+      "bio": "Promovala na 1. LF UK, obor stomatologie. 11 let pracovala v OÚNZ Jindřichův Hradec, převážně na oddělení pedostomatologie. V roce 1985 po návratu do Prahy působila do roku 1993 v OÚNZ Praha 5. Od roku 1994 pracuje ve vlastní soukromé praxi na Vinohradech.\r\n\nSpecializace: praktické zubní lékařství a dětská stomatologie\r\n\nVzdělání: atestace 1. stupně,  nástavbová atestace z pedostomatologie, stáže České Budějovice, FN Motol - dětská stomatologická klinika Praha"
+    },
+    {
+      "name": "MDDr. Zuzana Smolková - mateřská dovolená",
+      "photo": "/img/SmolkováZuzana.jpg",
+      "specialization": "záchovná stomatologie, estetická stomatologie a endodoncie",
+      "bio": "Vystudovala obor zubní lékařství na 1. lékařské fakultě UK v Praze. V průběhu studia se pravidelně účastnila kongresů Pražské dentální dny, Dental Summit nebo České endodontické společnosti. Dále během studia zvládla pracovat na JIPu na pozici asistentky. V roce 2014 nastupuje do privátní praxe Ordinace Šafaříkovi na plný úvazek. Aktivně se vzdělává na odborných školeních a seminářích.\r\n\nSpecializace: záchovná stomatologie, estetická stomatologie a endodoncie\r\n\nNyní na mateřské dovolené."
+    },
+    {
+      "name": "Dis. Lucie Nosilová",
+      "photo": "/img/NosilováLucie.jpg",
+      "specialization": "dentální hygienistka",
+      "bio": "Vzdělání:\r Střední zdravotnická škola, obor zubní technik 1994\r\n\nPomaturitní specializační studium v oboru zubní technik\r\n\nVOŠ zdravotnická pro dentální hygienistky 2009\r\n\n\"Úsměv je nejhezčí ozdobou lidské tváře, mým cílem je informovaný, spokojený klient s krásným a zdravým úsměvem\""
+    },
+    {
+      "name": "Simona Klementová",
+      "photo": "/img/KlementováSimona.jpg",
+      "specialization": "asistentka, dentální hygienistka",
+      "bio": "od 2014 Ordinace Šafaříkovi, asistence, dentální hygiena\r\n\n2011 -2013 FN U sv. Anny, chirurgická klinika\r\n\n2014 - 2018 Univerzita Karlova v Praze, 3.lf obor Dentální hygienistka\r\n\n2008 - 2011 Ostravská Univerzita, obor Všeobecná sestra"
+    },
+    {
+      "name": "Kateřina Havlíčková",
+      "photo": "/img/HavlíčkováKateřina.jpg",
+      "specialization": "asistentka",
+      "bio": "2017 - Ordinace Šafaříkovi\r\n\n2017 - Nemocnice Neratovice - MOJIP\r\n\n2016 - Stomatologická klinika Dent+\r\n\n2016 - 2017 VFN - II. interní klinika\r\n\n2015 - 2017 MDDr. MUDr. Jiří Šedý, PhD. - Stomatologická ordinace\r\n\n2013 - 2014 MUDr. Vošická Romana - Stomatologická ordinace\r\n\n2011 - 2016 VFN - Stomatochirurgická ambulance"
+    },
+    {
+      "name": "Drahomíra Havlíčková",
+      "photo": "/img/HavlíčkováDrahuška.jpg",
+      "specialization": "asistentka",
+      "bio": "Praxe:\r\n\n1984 – 1985 Kojenecký ústav Opava\r\n\n1985 – 1993 Zubní poliklinika Stodůlky (od r. 1990 vrchní sestra)\r\n\n1994 – 1995 Soukromá zubní ordinace Praha 5\r\n\nOd roku 1995 Soukromá zubní ordinace Šafaříkovi\r\n\nVzdělání:\r\n\nSZŠ Litomyšl – obor dětská sestra"
+    },
+    {
+      "name": "Jana Maliňáková - mateřská dovolená",
+      "photo": "/img/MaliňákováJana.jpg",
+      "specialization": "asistentka",
+      "bio": "Praxe:\r\n\n2004 – 2008 Veterinární klinika Na Hůrce (vrchní sestra)\r\n\n2011 – 2012 Zubní klinika Dent Medico\r\n\nOd října roku 2012 Soukromá zubní ordinace Šafaříkovi\r\n\nNyní na mateřské dovolené."
+    },
+    {
+      "name": "Jiřina Fochtová",
+      "photo": "/img/FochtováJiřina.jpg",
+      "specialization": "recepční",
+      "bio": "Vzdělání: SEŠ Praha\r\n\nPraxe: asistentka, sekretářka\r\n\n2011 - 2017 vedoucí recepce ISCARE, IVF a.s.\r\n\n2017 - Ordinace Šafaříkovi\r\n\nSpolečně s týmem naší ordinace Vám pomohu řešit problémy :-)"
+    },
+    {
+      "name": "Martin Něrgeš",
+      "photo": "/img/NěrgešMartin.jpg",
+      "specialization": "IT specialista",
+      "bio": "IT consulting\r\n\nSpecializace: IT poradenství a optimalizace,\r\n\nPHP, MySQL, MSAccess, web, EZS, 2N technologie,\r\n\nStrukturované kabeláže, Kamerové systémy,\r\n\nMAC systémy, Windows systémy."
+    },
+    {
+      "name": "MUDr. Miroslav Šafařík Sr. - emeritní vedoucí lékař",
+      "photo": "/img/ŠafaříkMiroslavstarší.jpg",
+      "specialization": "praktické zubní lékařství, protetika",
+      "bio": "Promoval na 1. LF UK, obor stomatologie v roce 1974. Poté 11 let pracoval v OÚNZ Jindřichův Hradec jako praktický zubní lékař. Po návratu do Prahy v roce 1985 působil v OÚNZ Praha 5, poslední léta po revoluci na pozici přednosty  a to až do roku 1993. V tomto roce vybudoval vlastní soukromou praxi na Vinohradech, kde působí dodnes.\r\n\nSpecializace: praktické zubní lékařství, protetika\r\n\nVzdělání: atestace 1. a 2. stupně, stáže České Budějovice, Brno, ÚVN Praha\r\n\nOd 1.4.2018 odchází do zaslouženého důchodu a působí jako emeritní šéf a konzultant."
     }
   ]
 }
