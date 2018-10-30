@@ -1,6 +1,7 @@
 {
   "key": "teamMembers",
   "title": "Náš tým",
+  "priority": 3,
   "path": "/tym/",
   "showInMenu": true,
   "teamMembers": [
