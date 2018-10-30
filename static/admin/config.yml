@@ -60,6 +60,18 @@ collections:
           - {label: Path, name: path, widget: hidden, default: "/sluzby/"}
           - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
           - {label: Content, name: body, widget: markdown}
+      - label: "Gallery"
+        name: "gallery"
+        file: "src/content/gallery.md"
+        fields: 
+          - {label: Key, name: key, widget: hidden, default: "gallery"}
+          - {label: Title, name: title, widget: string}
+          - {label: Path, name: path, widget: hidden, default: "/galerie/"}
+          - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
+          - label: "Images"
+            name: "galleryImages"
+            widget: "list"
+            field: {label: Image, name: image, widget: image}
       - label: "Team"
         name: "team"
         file: "src/content/team.json"

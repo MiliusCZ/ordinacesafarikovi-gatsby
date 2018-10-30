@@ -1,0 +1,8 @@
+{
+    "key": "gallery",
+    "title": "Galerie",
+    "showInMenu": true,
+    "path": "/galerie/",
+    "galleryImages": [
+    ]
+  }
