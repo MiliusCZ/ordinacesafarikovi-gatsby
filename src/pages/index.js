@@ -12,7 +12,6 @@ export default ({ data }) => {
         <Layout>
             <h1>Vítejte</h1>
             <p>Vítejte na stránkách zubní ordinace Šafaříkovi. </p>
-            <h2>Aktuality</h2>
             {news.map(newsEntry => <NewsItem key={newsEntry.node.id} title={newsEntry.node.frontmatter.title} body={newsEntry.node.html} />)}
             <Link to="/novinky">zobrazit všechny aktuality</Link>
         </Layout>

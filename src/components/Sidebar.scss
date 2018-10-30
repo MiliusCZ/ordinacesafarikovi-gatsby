@@ -13,10 +13,6 @@
         color: #324b88;
     }
 
-    h2 {
-        margin-bottom: 5px;
-    }
-
     .block {
         margin-bottom: 15px;
     }
@@ -30,5 +26,9 @@
     display: flex;
     div {
         margin-right: 25px;
+    }
+
+    div:nth-child(2) {
+        width: 80px;
     }
 }

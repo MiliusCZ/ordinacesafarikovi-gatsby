@@ -5,10 +5,11 @@ const ordinaceSafarikoviTheme = {
     baseFontSize: '14px',
     baseLineHeight: 1.61,
     headerFontFamily: ['Segoe UI', 'Verdana', 'sans-serif'],
-    bodyFontFamily: ['Segoie UI', 'Verdana', 'sans-serif'],
+    bodyFontFamily: ['Segoe UI', 'Verdana', 'sans-serif'],
     bodyWeight: 400,
-    headerWeight: 700,
+    headerWeight: 400,
     boldWeight: 700,
+    headerGray: 20,
     scaleRatio: 3,
     overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
         a: {
@@ -18,9 +19,11 @@ const ordinaceSafarikoviTheme = {
         'a:hover, a:active': {
             'text-decoration': 'underline'
         },
-        'h1, h2': {
-            'font-weight': 'normal',
-            'margin-bottom': '15px',
+        'h1': {
+            'margin-bottom': rhythm(1),
+        },
+        'h2': {
+            'margin-bottom': rhythm(1/4),
         },
         'h3, h4': {
             margin: 0

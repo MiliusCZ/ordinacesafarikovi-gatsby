@@ -8,7 +8,7 @@ export default ({ data }) => {
     const teamMembers = data.allContentJson.edges[0].node.teamMembers;
     const title = data.allContentJson.edges[0].node.title;
 
-    const teamMembersDisplay = teamMembers.map((teamMember) => <TeamMember data={teamMember} key={teamMember.name} />);
+    const teamMembersDisplay = teamMembers.map((teamMember, index) => <TeamMember data={teamMember} key={teamMember.name} index={index} />);
 
     return (
         <Layout>

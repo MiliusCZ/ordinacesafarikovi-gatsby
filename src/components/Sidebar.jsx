@@ -14,7 +14,7 @@ export const Sidebar = ({ data, full }) => (
                     Středa<br />
                     Čtvrtek<br />
                     Pátek
-            </div>
+                </div>
                 <div>
                     {data.openingHours}
                 </div>
