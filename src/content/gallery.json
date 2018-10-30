@@ -1,8 +1,26 @@
 {
-    "key": "gallery",
-    "title": "Galerie",
-    "showInMenu": true,
-    "path": "/galerie/",
-    "galleryImages": [
-    ]
-  }
+  "key": "gallery",
+  "title": "Galerie",
+  "path": "/galerie/",
+  "showInMenu": true,
+  "galleryImages": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}
