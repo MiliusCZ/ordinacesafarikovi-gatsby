@@ -62,7 +62,7 @@ collections:
           - {label: Content, name: body, widget: markdown}
       - label: "Gallery"
         name: "gallery"
-        file: "src/content/gallery.md"
+        file: "src/content/gallery.json"
         fields: 
           - {label: Key, name: key, widget: hidden, default: "gallery"}
           - {label: Title, name: title, widget: string}
