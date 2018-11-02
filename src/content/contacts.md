@@ -7,7 +7,9 @@ showInMenu: true
 ---
 ## Kde nás najdete
 
+<div style="background-color: gray; width: 540px; height: 350px;">
 <iframe width="540" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=cs&amp;q=Uruguayská 3&#10;+&#10;Praha 2, 120 00&amp;output=embed"></iframe>
+</div>
 
 Jak se k nám dostanete:
 
