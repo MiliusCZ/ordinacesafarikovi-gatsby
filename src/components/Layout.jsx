@@ -8,11 +8,11 @@ import { StaticQuery, graphql } from "gatsby";
 
 import "./Layout.scss";
 
-const LayoutComponent = ({ data, children, full }) => (
+const LayoutComponent = ({ data, children, fullSideBar, noSideBar }) => (
   <div className="mainContainer">
     <Header title={data.configurationJson.title} navigation={getNavigationData(data.allMarkdownRemark.edges, data.allContentJson.edges)} />
     <div className="content">
-      <Sidebar data={data.configurationJson} full={full} />
+      <Sidebar data={data.configurationJson} fullSideBar={fullSideBar} noSideBar={noSideBar} />
       {children}
     </div>
     <Footer disclaimer={data.configurationJson.disclaimer} />

@@ -18,6 +18,13 @@ module.exports = {
             },
         },
         {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+              path: `${__dirname}/static/img`,
+              name: 'image'
+            },
+        },
+        {
             resolve: 'gatsby-plugin-typography',
             options: {
               pathToConfigModule: 'src/utils/typography.js',
@@ -28,6 +35,8 @@ module.exports = {
             options: {
                 modulePath: `${__dirname}/src/cms/cms.js`,
             },
-        }
+        },
+        'gatsby-plugin-sharp',
+        'gatsby-transformer-sharp'
     ]
 }

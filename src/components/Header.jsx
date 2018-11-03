@@ -13,7 +13,7 @@ export const Header = ({ title, navigation }) => (
                 <Link to="/">{title}</Link>
             </div>
             <nav>
-                {navigation.map((item) => <Link key={item.key} to={item.path}>{item.title}</Link>)}
+                {navigation.map((item) => <Link key={item.key} activeClassName="active" to={item.path}>{item.title}</Link>)}
             </nav>
         </header>
         <div className="topImage">

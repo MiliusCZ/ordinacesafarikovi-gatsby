@@ -6,18 +6,19 @@ import { graphql } from 'gatsby';
 
 export default ({ data }) => {
     const title = data.allContentJson.edges[0].node.title;
-    const images = data.allContentJson.edges[0].node.galleryImages;
+    const images = data.allImageSharp;
 
     return (
-        <Layout>
+        <Layout noSideBar={true}>
             <h1>{title}</h1>
-            {images && <Gallery photos={images.map((image) => {
+            {images && <Gallery photos={images.edges.map(({ node }) => {
                 return {
-                    key: image,
-                    src: image,
-                    alt: image,
-                    width: 3,
-                    height: 2
+                    srcSet: node.fluid.srcSet,
+                    width: node.original.width,
+                    height: node.original.height,
+                    key: node.original.src,
+                    src: node.original.src,
+                    alt: node.fluid.originalName
                 }
             })} />
             }
@@ -37,5 +38,23 @@ export const query = graphql`
           }
         }
       }
+      allImageSharp(
+          filter: {fluid:{originalName: {regex: "/gallery/"}}}
+        ) {
+          edges {
+            node {
+              original {
+                src
+                width
+                height
+              }
+              fluid(maxWidth: 700, quality: 85) {
+                srcSet
+                originalName
+                src
+              }
+            }
+          }
+        }
     }
 `;

@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import { graphql } from 'gatsby';
 
 export default ({ data }) => (
-    <Layout full={true}>
+    <Layout fullSideBar={true}>
         <h1>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }} />
     </Layout>
