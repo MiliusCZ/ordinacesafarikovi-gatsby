@@ -1,30 +1,33 @@
-import React from "react";
-import Layout from "../components/Layout";
+import React from 'react';
+import Layout from '../components/Layout';
 import Gallery from 'react-photo-gallery';
+import PropTypes from 'prop-types';
 
 import { graphql } from 'gatsby';
 
-export default ({ data }) => {
-    const title = data.allContentJson.edges[0].node.title;
-    const images = data.allImageSharp;
+const GalleryPage = ({ data }) => {
+  const title = data.allContentJson.edges[0].node.title;
+  const images = data.allImageSharp;
 
-    return (
-        <Layout noSideBar={true}>
-            <h1>{title}</h1>
-            {images && <Gallery photos={images.edges.map(({ node }) => {
-                return {
-                    srcSet: node.fluid.srcSet,
-                    width: node.original.width,
-                    height: node.original.height,
-                    key: node.original.src,
-                    src: node.original.src,
-                    alt: node.fluid.originalName
-                }
-            })} />
-            }
-        </Layout>
-    )
-}
+  return (
+    <Layout noSideBar={true}>
+      <h1>{title}</h1>
+      {images && <Gallery photos={images.edges.map(({ node }) => {
+        return {
+          srcSet: node.fluid.srcSet,
+          width: node.original.width,
+          height: node.original.height,
+          key: node.original.src,
+          src: node.original.src,
+          alt: node.fluid.originalName
+        };
+      })} />
+      }
+    </Layout>
+  );
+};
+
+export default GalleryPage;
 
 export const query = graphql`
   query GalleryQuery {
@@ -58,3 +61,9 @@ export const query = graphql`
         }
     }
 `;
+
+GalleryPage.displayName = 'GalleryPage';
+
+GalleryPage.propTypes = {
+  data: PropTypes.object
+};

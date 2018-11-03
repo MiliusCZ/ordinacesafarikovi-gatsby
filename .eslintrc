@@ -1,0 +1,29 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "indent": ["error", 2],
+    "strict": 0,
+    "semi": "error",
+    "no-trailing-spaces": ["error"],
+    "eol-last": ["error", "always"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "quotes": ["error", "single"]
+  },
+  "settings": {
+    "react": {
+      "version": "16.0"
+    }
+  },
+  "env": {
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"]
+}

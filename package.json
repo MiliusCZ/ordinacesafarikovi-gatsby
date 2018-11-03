@@ -5,7 +5,9 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "lint": "eslint src --ext .jsx --ext .js",
+    "lint:fix": "eslint src --fix --ext .jsx --ext .js"
   },
   "dependencies": {
     "gatsby": "^2.0.31",
@@ -25,5 +27,11 @@
     "react-photo-gallery": "^6.2.1",
     "react-typography": "^0.16.13",
     "typography": "^0.16.17"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1",
+    "gatsby-plugin-eslint": "^2.0.1"
   }
 }

@@ -1,12 +1,13 @@
-import React from "react";
-import Layout from "../components/Layout";
-import Link from "gatsby-link";
+import React from 'react';
+import Layout from '../components/Layout';
+import Link from 'gatsby-link';
+import PropTypes from 'prop-types';
 
-import { graphql } from "gatsby";
+import { graphql } from 'gatsby';
 
-import "./teamMember.scss";
+import './teamMember.scss';
 
-export default ({ data, pageContext}) => {
+const TeamMemberTemplate = ({ data, pageContext}) => {
   const teamMember = data.allContentJson.edges[0].node.teamMembers[pageContext.id];
   return (
     <Layout>
@@ -20,8 +21,10 @@ export default ({ data, pageContext}) => {
       </div>
       <Link to="/tym/">zpět na přehled týmu</Link>
     </Layout>
-  )
-}
+  );
+};
+
+export default TeamMemberTemplate;
 
 export const query = graphql`
 {
@@ -42,3 +45,10 @@ export const query = graphql`
     }
   }
 }`;
+
+TeamMemberTemplate.displayName = 'TeamMemberTemplate';
+
+TeamMemberTemplate.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
+};

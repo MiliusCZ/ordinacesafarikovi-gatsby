@@ -1,28 +1,31 @@
-import React from "react";
-import Layout from "../components/Layout";
-import { TeamMember } from "../components/TeamMember";
+import React from 'react';
+import Layout from '../components/Layout';
+import { TeamMember } from '../components/TeamMember';
+import PropTypes from 'prop-types';
 
 import { graphql } from 'gatsby';
 
-export default ({ data }) => {
-    const teamMembers = data.allContentJson.edges[0].node.teamMembers;
-    const title = data.allContentJson.edges[0].node.title;
+const TeamPage = ({ data }) => {
+  const teamMembers = data.allContentJson.edges[0].node.teamMembers;
+  const title = data.allContentJson.edges[0].node.title;
 
-    const teamMembersDisplay = teamMembers.map((teamMember, index) => <TeamMember data={teamMember} key={teamMember.name} index={index} />);
+  const teamMembersDisplay = teamMembers.map((teamMember, index) => (
+    <TeamMember data={teamMember} key={teamMember.name} index={index} />
+  ));
 
-    return (
-        <Layout>
-          <h1>{title}</h1>
-          {teamMembersDisplay}
-        </Layout>
-    )
-}
+  return (
+    <Layout>
+      <h1>{title}</h1>
+      {teamMembersDisplay}
+    </Layout>
+  );
+};
+
+export default TeamPage;
 
 export const query = graphql`
   query TeamQuery {
-    allContentJson(
-      filter: {  key: { eq: "teamMembers" }}
-    ) {
+    allContentJson(filter: { key: { eq: "teamMembers" } }) {
       edges {
         node {
           title
@@ -37,3 +40,9 @@ export const query = graphql`
     }
   }
 `;
+
+TeamPage.displayName = 'TeamPage';
+
+TeamPage.propTypes = {
+  data: PropTypes.object
+};
