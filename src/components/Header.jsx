@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "gatsby-link";
+import Img from "gatsby-image";
 
 import "./Header.scss";
 
-export const Header = ({ title, navigation }) => (
+export const Header = ({ image, title, navigation }) => (
     <React.Fragment>
         <header className="siteHeader">
             <div className="siteHeaderImage">
@@ -17,7 +18,7 @@ export const Header = ({ title, navigation }) => (
             </nav>
         </header>
         <div className="topImage">
-            <img src="/img/uvodnivsichni_mod.jpg" alt="Team" />
+            <Img fluid={image} />
         </div>
     </React.Fragment>
 );

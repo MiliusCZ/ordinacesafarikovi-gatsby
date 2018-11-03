@@ -10,7 +10,10 @@ import "./Layout.scss";
 
 const LayoutComponent = ({ data, children, fullSideBar, noSideBar }) => (
   <div className="mainContainer">
-    <Header title={data.configurationJson.title} navigation={getNavigationData(data.allMarkdownRemark.edges, data.allContentJson.edges)} />
+    <Header title={data.configurationJson.title} 
+            navigation={getNavigationData(data.allMarkdownRemark.edges, data.allContentJson.edges)} 
+            image={data.file.childImageSharp.fluid}
+    />
     <div className="content">
       <Sidebar data={data.configurationJson} fullSideBar={fullSideBar} noSideBar={noSideBar} />
       {children}
@@ -76,6 +79,13 @@ export default props => (
                 path
                 priority
               }
+            }
+          }
+        }
+        file(relativePath: {eq: "uvodnivsichni_mod.jpg"}) {
+          childImageSharp {
+            fluid(maxWidth: 960) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
