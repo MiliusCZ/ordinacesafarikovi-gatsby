@@ -5602,6 +5602,13 @@ gatsby-link@^2.0.5, gatsby-link@^2.0.6:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
+gatsby-plugin-google-analytics@^2.0.7:
+  version "2.0.7"
+  resolved "https://artifacts.merck.com/artifactory/api/npm/npm-main/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.0.7.tgz#22ac5fe3a226c19bd523997cb3891ab0d3454e37"
+  integrity sha1-Iqxf46ImwZvVI5l8s4kasNNFTjc=
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
 gatsby-plugin-netlify-cms@^3.0.4:
   version "3.0.5"
   resolved "https://artifacts.merck.com/artifactory/api/npm/npm-main/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-3.0.5.tgz#2508424c43ec432163656b63e46c6ea9ff8a29f9"
