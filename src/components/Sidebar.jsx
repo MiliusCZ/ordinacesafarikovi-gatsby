@@ -88,6 +88,6 @@ Sidebar.displayName = 'Sidebar';
 
 Sidebar.propTypes = {
   data: PropTypes.object,
-  fullSideBar: PropTypes.boolean,
-  noSideBar: PropTypes.boolean
+  fullSideBar: PropTypes.bool,
+  noSideBar: PropTypes.bool
 };

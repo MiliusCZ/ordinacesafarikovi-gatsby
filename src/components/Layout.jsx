@@ -59,9 +59,9 @@ LayoutComponent.displayName = 'LayoutComponent';
 
 LayoutComponent.propTypes = {
   data: PropTypes.object,
-  children: PropTypes.object,
-  fullSideBar: PropTypes.boolean,
-  noSideBar: PropTypes.boolean
+  children: PropTypes.array,
+  fullSideBar: PropTypes.bool,
+  noSideBar: PropTypes.bool
 };
 
 const Layout = props => (
