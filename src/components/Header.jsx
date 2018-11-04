@@ -36,5 +36,5 @@ Header.displayName = 'Header';
 Header.propTypes = {
   image: PropTypes.object,
   title: PropTypes.string,
-  navigation: PropTypes.object
+  navigation: PropTypes.array
 };
