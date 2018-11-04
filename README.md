@@ -1,8 +1,17 @@
-# gatsby-netlify-starter-milos
+# Ordinace Safarikovi
 
-Customized Gatsby starter based on gatsby-starter-hello-world
+Content source and web for Ordinace Safarikovi
 
-- added support for netlify-cms
-- added typography.js
-- added site configuration via json
-- added starter layout file
+## Technologies used
+
+- Gatsby JS
+- Netlify CMS
+- React
+- ESLint
+- Typography.js
+
+## Commands
+
+- yarn develop - local dev server
+- yarn lint - code check
+- yarn lint:fix - code check and apply auto fixes
