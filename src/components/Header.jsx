@@ -13,9 +13,9 @@ export const Header = ({ image, title, navigation }) => (
         <Link to="/">
           <img src="/img/logo_black.png" alt="Logo" />
         </Link>
-      </div>
-      <div className="siteTitle">
-        <Link to="/">{title}</Link>
+        <div className="siteTitle">
+          <Link to="/">{title}</Link>
+        </div>
       </div>
       <nav>
         {navigation.map(item => (

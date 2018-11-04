@@ -49,7 +49,7 @@ const LayoutComponent = ({ data, children, fullSideBar, noSideBar }) => (
         fullSideBar={fullSideBar}
         noSideBar={noSideBar}
       />
-      {children}
+      <div className="contentChildren">{children}</div>
     </div>
     <Footer disclaimer={data.configurationJson.disclaimer} />
   </div>

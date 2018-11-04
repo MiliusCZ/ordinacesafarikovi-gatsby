@@ -1,43 +1,74 @@
 header.siteHeader {
-	height: 80px;	
-    background-color: black;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  nav {
+    flex-grow: 1;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: flex-end;
 
-    nav {
-        flex-grow: 1;
-        display: flex;
-        justify-content: flex-end;
-    
-        a {
-            margin-left: 20px;
-            font-weight: 500;
-        }
-
-        a.active {
-            color: white;
-        }
+    a {
+      margin-left: 20px;
+      font-weight: 500;
     }
+
+    a.active {
+      color: white;
+    }
+  }
 }
 
 .siteTitle {
-	a {
-        color: white;
-        font-size: larger;
-	}
+  a {
+    color: white;
+    font-size: larger;
+  }
 }
 
 .siteHeaderImage {
-	margin-right: 15px;
-	margin-left: 10px;
-	
-	img {
-        height: 75px;
-        margin: 0;
-	}
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-right: 15px;
+    margin-left: 10px;
+  }
+
+  img {
+    height: 75px;
+    margin: 0;
+  }
 }
 
 .topImage {
-	height: 320px;	
+  height: 320px;
+}
+
+@media only screen and (max-width: 960px) {
+  .topImage {
+    height: auto;
+  }
+
+  header.siteHeader {
+      display: block;
+      height: auto;
+      text-align: center;
+
+      .siteHeaderImage {
+          justify-content: center;
+      }
+
+      nav {
+          display: block;
+
+          a {
+              display: block;
+              height: 30px;
+              width: 100%;
+          }
+      }
+  }
 }
