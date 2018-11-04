@@ -9,6 +9,7 @@ Content source and web for Ordinace Safarikovi
 - React
 - ESLint
 - Typography.js
+- GraphQL
 
 ## Commands
 
