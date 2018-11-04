@@ -26,5 +26,23 @@ body {
     background-color: $contentBackgroundColor;
 }
 
+@media only screen and (max-width: 960px) {
+    .mainContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+        .contentChildren {
+            padding: 25px;
+        }
+    }
+}
+
 
 

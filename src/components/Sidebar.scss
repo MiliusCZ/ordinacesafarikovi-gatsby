@@ -1,34 +1,41 @@
 .sidebar {
-	position: relative;
-    display: block;
-    float: right;
-	width: 30%;
-    top: -100px;
-	padding: 25px;
+  position: relative;
+  display: block;
+  float: right;
+  width: 30%;
+  top: -100px;
+  padding: 25px;
 
-    background-color: #90ccdb;
-    margin-left: 40px;
+  background-color: #90ccdb;
+  margin-left: 40px;
 
-    a {
-        color: #324b88;
-    }
+  a {
+    color: #324b88;
+  }
 
-    .block {
-        margin-bottom: 15px;
-    }
+  .block {
+    margin-bottom: 15px;
+  }
 
-    .allContacts {
-        font-weight: bold;
-    }
+  .allContacts {
+    font-weight: bold;
+  }
 }
 
 .openingHours {
-    display: flex;
-    div {
-        margin-right: 25px;
-    }
+  display: flex;
+  div {
+    margin-right: 25px;
+  }
+}
 
-    div:nth-child(2) {
-        width: 80px;
-    }
+@media only screen and (max-width: 960px) {
+  .sidebar {
+    position: static;
+    top: 0;
+    float: none;
+    margin: 0;
+    width: 100%;
+    order: 5;
+  }
 }

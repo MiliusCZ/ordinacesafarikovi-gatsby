@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './Footer.scss';
 
-export const Footer = ({ disclaimer }) => <footer>{disclaimer}</footer>;
+export const Footer = ({ disclaimer }) => <footer className="siteFooter">{disclaimer}</footer>;
 
 Footer.displayName = 'Footer';
 
