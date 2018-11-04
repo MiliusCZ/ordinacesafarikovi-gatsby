@@ -24,7 +24,7 @@ export const Sidebar = ({ data, fullSideBar, noSideBar }) => {
             <br />
             Pátek
           </div>
-          <div>{data.openingHours}</div>
+          <div dangerouslySetInnerHTML={{ __html: data.openingHours.replace(/\n/g, '<br />\n')}}></div>
         </div>
       </div>
 
