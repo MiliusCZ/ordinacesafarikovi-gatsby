@@ -1,18 +1,15 @@
 import React from 'react';
-import Link from 'gatsby-link';
-import PropTypes from 'prop-types';
-
 import Layout from '../components/Layout';
 import { NewsItem } from '../components/NewsItem';
+import PropTypes from 'prop-types';
 
 import { graphql } from 'gatsby';
 
-const IndexPage = ({ data }) => {
+const NewsPage = ({ data }) => {
   const news = data.allMarkdownRemark.edges;
   return (
     <Layout>
-      <h1>Vítejte</h1>
-      <p>Vítejte na stránkách zubní ordinace Šafaříkovi. </p>
+      <h1>Novinky</h1>
       {news.map(newsEntry => (
         <NewsItem
           key={newsEntry.node.id}
@@ -20,19 +17,17 @@ const IndexPage = ({ data }) => {
           body={newsEntry.node.html}
         />
       ))}
-      <Link to="/novinky">zobrazit všechny aktuality</Link>
     </Layout>
   );
 };
 
-export default IndexPage;
+export default NewsPage;
 
 export const query = graphql`
-  query TopNewsQuery {
+  query NewsQuery {
     allMarkdownRemark(
-      filter: { fields: { isNews: { eq: true } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 1
+      filter: {fields: {isNews: {eq: true}}, frontmatter: {show: {eq: true}}}, 
+      sort: {fields: [frontmatter___date], order: DESC}
     ) {
       edges {
         node {
@@ -48,8 +43,8 @@ export const query = graphql`
   }
 `;
 
-IndexPage.displayName = 'IndexPage';
+NewsPage.displayName = 'NewsPage';
 
-IndexPage.propTypes = {
+NewsPage.propTypes = {
   data: PropTypes.object
 };
