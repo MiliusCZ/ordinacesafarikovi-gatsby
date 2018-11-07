@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 
+import addHttps from '../utils/addHttps';
+
 import './Sidebar.scss';
 
 export const Sidebar = ({ data, fullSideBar, noSideBar }) => {
@@ -24,7 +26,7 @@ export const Sidebar = ({ data, fullSideBar, noSideBar }) => {
             <br />
             Pátek
           </div>
-          <div dangerouslySetInnerHTML={{ __html: data.openingHours.replace(/\n/g, '<br />\n')}}></div>
+          <div dangerouslySetInnerHTML={{ __html: data.openingHours.replace(/\n/g, '<br />\n') }}></div>
         </div>
       </div>
 
@@ -59,7 +61,7 @@ export const Sidebar = ({ data, fullSideBar, noSideBar }) => {
         <div className="block">
           <h2>Web</h2>
           <div>
-            <a href={data.web}>{data.web}</a>
+            <a href={addHttps(data.web)}>{data.web}</a>
           </div>
         </div>
       )}
@@ -68,7 +70,7 @@ export const Sidebar = ({ data, fullSideBar, noSideBar }) => {
         <div>
           <h2>Facebook</h2>
           <div>
-            <a href={data.facebook} target="_blank" rel="noopener noreferrer">
+            <a href={addHttps(data.facebook)} target="_blank" rel="noopener noreferrer">
               {data.facebook}
             </a>
           </div>

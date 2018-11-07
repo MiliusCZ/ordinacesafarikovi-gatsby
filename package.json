@@ -6,8 +6,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "lint": "eslint src --ext .jsx --ext .js",
-    "lint:fix": "eslint src --fix --ext .jsx --ext .js"
+    "lint": "eslint src --ext .jsx --ext .js; eslint gatsby-node.js",
+    "lint:fix": "eslint src --fix --ext .jsx --ext .js; eslint gatsby-node.js --fix"
   },
   "dependencies": {
     "gatsby": "^2.0.31",
