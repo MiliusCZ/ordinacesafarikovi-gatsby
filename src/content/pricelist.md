@@ -1,8 +1,13 @@
 ---
 key: pricelist
 title: Ceník
+showInMenu: true
+path: "/cenik/"
+priority: 7
 ---
-U naší klientely si zakládáme na vzájemné důvěře a hlavní pro nás je, aby námi vybraný způsob ošetření byl tou nejvhodnější variantou. Doporučujeme Vám abyste se nebáli na cokoliv zeptat, budeme se snažit vše srozumitelně vysvětlit. Kompletní ceník výkonů Vám na požádání předložíme. Nejnutnější a nejčastější seznam výkonů z ceníku zde: 
+U naší klientely si zakládáme na vzájemné důvěře a hlavní pro nás je, aby námi vybraný způsob ošetření byl tou nejvhodnější variantou. Doporučujeme Vám abyste se nebáli na cokoliv zeptat, budeme se snažit vše srozumitelně vysvětlit. Kompletní ceník výkonů Vám na požádání předložíme. 
+
+Nejnutnější a nejčastější seznam výkonů z ceníku zde: 
 
 Výkon                           | Cena
 :-------------------------------| :------------------------------:
