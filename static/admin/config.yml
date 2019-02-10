@@ -65,6 +65,13 @@ collections:
           - {label: Path, name: path, widget: hidden, default: "/sluzby/"}
           - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
           - {label: Content, name: body, widget: markdown}
+      - label: "Price list page"	
+        name: "pricelist"	
+        file: "src/content/pricelist.md"	
+        fields: 	
+          - {label: Key, name: key, widget: hidden, default: "pricelist"}	
+          - {label: Title, name: title, widget: string}	
+          - {label: Content, name: body, widget: markdown}          
       - label: "Gallery"
         name: "gallery"
         file: "src/content/gallery.json"

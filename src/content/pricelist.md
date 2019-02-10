@@ -1,7 +1,7 @@
 ---
 key: pricelist
 title: Ceník
-showInMenu: false
+showInMenu: true
 path: "/cenik/"
 priority: 7
 ---
