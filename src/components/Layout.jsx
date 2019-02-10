@@ -28,9 +28,10 @@ const getNavigationData = (contentPages, dataPages) => {
     };
   });
 
-  return contentNavigation
-    .concat(dataNavigation)
-    .sort((a, b) => a.priority > b.priority);
+  const navigation = contentNavigation.concat(dataNavigation);
+  navigation.sort((a, b) => a.priority > b.priority);
+
+  return navigation;
 };
 
 const LayoutComponent = ({ data, children, fullSideBar, noSideBar }) => (
