@@ -1,8 +1,8 @@
 {
   "key": "gallery",
   "title": "Galerie",
-  "path": "/galerie/",
   "priority": 5,
+  "path": "/galerie/",
   "showInMenu": true,
   "galleryImages": [
     "/img/gallery-IMGP3170.jpg",
@@ -21,6 +21,17 @@
     "/img/gallery-IMGP3297.jpg",
     "/img/gallery-IMGP3163.jpg",
     "/img/gallery-IMGP3161.jpg",
-    "/img/gallery-imgp3152.jpg"
+    "/img/gallery-imgp3152.jpg",
+    "/img/_mjr5093.jpg",
+    "/img/_mjr4987.jpg",
+    "/img/_mjr4896.jpg",
+    "/img/_mjr4757.jpg",
+    "/img/_mjr4795.jpg",
+    "/img/_mjr4779.jpg",
+    "/img/_mjr4942.jpg",
+    "/img/_mjr4791.jpg",
+    "/img/_mjr5036.jpg",
+    "/img/_mjr4953.jpg",
+    "/img/_mjr4753.jpg"
   ]
 }
