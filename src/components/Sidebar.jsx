@@ -10,6 +10,9 @@ export const Sidebar = ({ data, fullSideBar, noSideBar }) => {
   if (noSideBar) {
     return null;
   }
+
+  const phones = data.phone.replace(/\s/g, '').split(',');
+
   return (
     <div className="sidebar">
       <div className="block">
@@ -33,7 +36,9 @@ export const Sidebar = ({ data, fullSideBar, noSideBar }) => {
       <div className="block">
         <h2>Telefon</h2>
         <div>
-          <a href={`tel:${data.phone.replace(/\s/g, '')}`}>{data.phone}</a>
+          {
+            phones.map(phone => <><a key={phone} href={`tel:${phone}`}>{phone}</a><br /></>)
+          }
         </div>
       </div>
 
