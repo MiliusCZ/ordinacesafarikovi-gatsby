@@ -29,16 +29,25 @@ export const Sidebar = ({ data, fullSideBar, noSideBar }) => {
             <br />
             Pátek
           </div>
-          <div dangerouslySetInnerHTML={{ __html: data.openingHours.replace(/\n/g, '<br />\n') }}></div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: data.openingHours.replace(/\n/g, '<br />\n'),
+            }}
+          ></div>
         </div>
       </div>
 
       <div className="block">
         <h2>Telefon</h2>
         <div>
-          {
-            phones.map(phone => <><a key={phone} href={`tel:${phone}`}>{phone}</a><br /></>)
-          }
+          {phones.map((phone) => (
+            <span key={phone}>
+              <a key={phone} href={`tel:${phone}`}>
+                {phone}
+              </a>
+              <br />
+            </span>
+          ))}
         </div>
       </div>
 
@@ -75,7 +84,11 @@ export const Sidebar = ({ data, fullSideBar, noSideBar }) => {
         <div>
           <h2>Facebook</h2>
           <div>
-            <a href={addHttps(data.facebook)} target="_blank" rel="noopener noreferrer">
+            <a
+              href={addHttps(data.facebook)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {data.facebook}
             </a>
           </div>
@@ -96,5 +109,5 @@ Sidebar.displayName = 'Sidebar';
 Sidebar.propTypes = {
   data: PropTypes.object,
   fullSideBar: PropTypes.bool,
-  noSideBar: PropTypes.bool
+  noSideBar: PropTypes.bool,
 };

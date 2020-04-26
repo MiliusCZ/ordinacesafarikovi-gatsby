@@ -6,11 +6,15 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 const TeamPage = ({ data }) => {
-  const teamMembers = data.allContentJson.edges[0].node.teamMembers;
-  const title = data.allContentJson.edges[0].node.title;
+  const teamMembers = data.allTeamMember.edges;
+  const title = data.contentJson.title;
 
   const teamMembersDisplay = teamMembers.map((teamMember, index) => (
-    <TeamMember data={teamMember} key={teamMember.name} index={index} />
+    <TeamMember
+      data={teamMember.node}
+      key={teamMember.node.memberName}
+      index={index}
+    />
   ));
 
   return (
@@ -25,15 +29,19 @@ export default TeamPage;
 
 export const query = graphql`
   query TeamQuery {
-    allContentJson(filter: { key: { eq: "teamMembers" } }) {
+    contentJson(key: { eq: "teamMembers" }) {
+      title
+    }
+    allTeamMember {
       edges {
         node {
-          title
-          teamMembers {
-            name
-            photo
-            specialization
-            bio
+          memberName
+          specialization
+          bio
+          childImageSharp {
+            fluid(maxWidth: 50) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
@@ -44,5 +52,5 @@ export const query = graphql`
 TeamPage.displayName = 'TeamPage';
 
 TeamPage.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.object,
 };
