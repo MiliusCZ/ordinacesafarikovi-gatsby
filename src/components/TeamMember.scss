@@ -1,17 +1,19 @@
 .teamMember {
-    display: flex;
+  display: flex;
+  height: 80px;
 
-    img {
-        width: 50px;
-        height: 70px;
-    }
+  .imgContainer {
+    width: 50px;
+    height: 70px;
+    overflow: hidden;
+  }
 
-    .description {
-        display: block;
-        margin-left: 25px;
-    }
+  .description {
+    display: block;
+    margin-left: 25px;
+  }
 
-    a {
-        color: black;
-    }
+  a {
+    color: black;
+  }
 }
