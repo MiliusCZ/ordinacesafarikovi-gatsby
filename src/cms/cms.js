@@ -1,20 +1,19 @@
-import 'netlify-cms/dist/cms.css';
 import React from 'react';
 import PropTypes from 'prop-types';
 
 import { TeamMember } from '../components/TeamMember';
 
-import CMS from 'netlify-cms';
+import CMS from 'netlify-cms-app';
 
 const TeamMemberPreview = ({ widgetsFor }) => (
   <div>
-    {widgetsFor('teamMembers').map(member => {
+    {widgetsFor('teamMembers').map((member) => {
       const memberData = {
         name: member.getIn(['data', 'name']),
         photo: member.getIn(['data', 'photo']),
-        specialization: member.getIn(['data', 'specialization'])
+        specialization: member.getIn(['data', 'specialization']),
       };
-      return (<TeamMember data={memberData} key={memberData.name}/>);
+      return <TeamMember data={memberData} key={memberData.name} />;
     })}
   </div>
 );
@@ -22,5 +21,5 @@ const TeamMemberPreview = ({ widgetsFor }) => (
 CMS.registerPreviewTemplate('team', TeamMemberPreview);
 
 TeamMemberPreview.propTypes = {
-  widgetsFor: PropTypes.function
+  widgetsFor: PropTypes.function,
 };
