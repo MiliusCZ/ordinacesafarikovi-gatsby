@@ -2,6 +2,9 @@ backend:
   name: git-gateway
   branch: master
 
+display_url: https://www.ordinacesafarikovi.cz
+logo_url: https://www.ordinacesafarikovi.cz/img/logo_black.png
+
 media_folder: static/img
 public_folder: /img
 
