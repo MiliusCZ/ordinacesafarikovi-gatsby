@@ -9,109 +9,159 @@ media_folder: static/img
 public_folder: /img
 
 slug:
-  encoding: "ascii"
+  encoding: 'ascii'
   clean_accents: true
 
-collections: 
-  - label: "Configuration"
-    name: "config"
+collections:
+  - label: 'Configuration'
+    name: 'config'
     files:
-      - label: "Site configuration"
-        name: "site-config"
-        file: "src/configuration/site.json"
+      - label: 'Site configuration'
+        name: 'site-config'
+        file: 'src/configuration/site.json'
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Disclaimer, name: disclaimer, widget: string}
-          - {label: Phone, name: phone, widget: string}
-          - {label: E-mail, name: email, widget: string}
-          - {label: Web, name: web, widget: string}
-          - {label: Facebook, name: facebook, widget: string}
+          - { label: Title, name: title, widget: string }
+          - { label: Disclaimer, name: disclaimer, widget: string }
+          - { label: Phone, name: phone, widget: string }
+          - { label: E-mail, name: email, widget: string }
+          - { label: Web, name: web, widget: string }
+          - { label: Facebook, name: facebook, widget: string }
           - label: Address
             name: address
             widget: object
-            fields: 
-            - {label: "Name", name: "name", widget: "string"}
-            - {label: "Street", name: "street", widget: "string"}
-            - {label: "City", name: "city", widget: "string"}
-            - {label: "Postal Code", name: "zip", widget: "string"}
-          - {label: "Opening hours", name: "openingHours", widget: "text"}
-  - label: "Pages"
-    name: "pages"
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Street', name: 'street', widget: 'string' }
+              - { label: 'City', name: 'city', widget: 'string' }
+              - { label: 'Postal Code', name: 'zip', widget: 'string' }
+          - { label: 'Opening hours', name: 'openingHours', widget: 'text' }
+  - label: 'Pages'
+    name: 'pages'
     files:
-      - label: "About us page"
-        name: "about-us"
-        file: "src/content/about-us.md"
-        fields: 
-          - {label: Key, name: key, widget: hidden, default: "about-us"}
-          - {label: Title, name: title, widget: string}
-          - {label: Priority, name: priority, widget: number, valueType: "int"}
-          - {label: Path, name: path, widget: hidden, default: "/o-nas/"}
-          - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
-          - {label: Content, name: body, widget: markdown}
-      - label: "Contacts page"
-        name: "contacts"
-        file: "src/content/contacts.md"
-        fields: 
-          - {label: Key, name: key, widget: hidden, default: "contacts"}
-          - {label: Title, name: title, widget: string}
-          - {label: Priority, name: priority, widget: number, valueType: "int"}
-          - {label: Path, name: path, widget: hidden, default: "/kontakty/"}
-          - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
-          - {label: Content, name: body, widget: markdown}
-      - label: "Services page"
-        name: "services"
-        file: "src/content/services.md"
-        fields: 
-          - {label: Key, name: key, widget: hidden, default: "services"}
-          - {label: Title, name: title, widget: string}
-          - {label: Priority, name: priority, widget: number, valueType: "int"}
-          - {label: Path, name: path, widget: hidden, default: "/sluzby/"}
-          - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
-          - {label: Content, name: body, widget: markdown}
-      - label: "Price list page"	
-        name: "pricelist"	
-        file: "src/content/pricelist.md"	
-        fields: 	
-          - {label: Key, name: key, widget: hidden, default: "pricelist"}	
-          - {label: Title, name: title, widget: string}	
-          - {label: Content, name: body, widget: markdown}          
-      - label: "Gallery"
-        name: "gallery"
-        file: "src/content/gallery.json"
-        fields: 
-          - {label: Key, name: key, widget: hidden, default: "gallery"}
-          - {label: Title, name: title, widget: string}
-          - {label: Priority, name: priority, widget: number, valueType: "int"}
-          - {label: Path, name: path, widget: hidden, default: "/galerie/"}
-          - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
-          - label: "Images"
-            name: "galleryImages"
-            widget: "list"
-            field: {label: Image, name: image, widget: image}
-      - label: "Team"
-        name: "team"
-        file: "src/content/team.json"
+      - label: 'About us page'
+        name: 'about-us'
+        file: 'src/content/about-us.md'
         fields:
-          - {label: Key, name: key, widget: hidden, default: "team"}
-          - {label: Title, name: title, widget: string, defualt: "Tým"}
-          - {label: Priority, name: priority, widget: number, valueType: "int"}
-          - {label: Path, name: path, widget: hidden, default: "/tym/", }
-          - {label: "Show in menu", name: showInMenu, widget: boolean, default: true}
-          - label: "Team Members"
-            name: "teamMembers"
+          - { label: Key, name: key, widget: hidden, default: 'about-us' }
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Priority,
+              name: priority,
+              widget: number,
+              valueType: 'int',
+            }
+          - { label: Path, name: path, widget: hidden, default: '/o-nas/' }
+          - {
+              label: 'Show in menu',
+              name: showInMenu,
+              widget: boolean,
+              default: true,
+            }
+          - { label: Content, name: body, widget: markdown }
+      - label: 'Contacts page'
+        name: 'contacts'
+        file: 'src/content/contacts.md'
+        fields:
+          - { label: Key, name: key, widget: hidden, default: 'contacts' }
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Priority,
+              name: priority,
+              widget: number,
+              valueType: 'int',
+            }
+          - { label: Path, name: path, widget: hidden, default: '/kontakty/' }
+          - {
+              label: 'Show in menu',
+              name: showInMenu,
+              widget: boolean,
+              default: true,
+            }
+          - { label: Content, name: body, widget: markdown }
+      - label: 'Services page'
+        name: 'services'
+        file: 'src/content/services.md'
+        fields:
+          - { label: Key, name: key, widget: hidden, default: 'services' }
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Priority,
+              name: priority,
+              widget: number,
+              valueType: 'int',
+            }
+          - { label: Path, name: path, widget: hidden, default: '/sluzby/' }
+          - {
+              label: 'Show in menu',
+              name: showInMenu,
+              widget: boolean,
+              default: true,
+            }
+          - { label: Content, name: body, widget: markdown }
+      - label: 'Price list page'
+        name: 'pricelist'
+        file: 'src/content/pricelist.md'
+        fields:
+          - { label: Key, name: key, widget: hidden, default: 'pricelist' }
+          - { label: Title, name: title, widget: string }
+          - { label: Content, name: body, widget: markdown }
+      - label: 'Gallery'
+        name: 'gallery'
+        file: 'src/content/gallery.json'
+        fields:
+          - { label: Key, name: key, widget: hidden, default: 'gallery' }
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Priority,
+              name: priority,
+              widget: number,
+              valueType: 'int',
+            }
+          - { label: Path, name: path, widget: hidden, default: '/galerie/' }
+          - {
+              label: 'Show in menu',
+              name: showInMenu,
+              widget: boolean,
+              default: true,
+            }
+          - label: 'Images'
+            name: 'galleryImages'
+            widget: 'list'
+            field: { label: Image, name: image, widget: image }
+      - label: 'Team'
+        name: 'team'
+        file: 'src/content/team.json'
+        fields:
+          - { label: Key, name: key, widget: hidden, default: 'team' }
+          - { label: Title, name: title, widget: string, defualt: 'Tým' }
+          - {
+              label: Priority,
+              name: priority,
+              widget: number,
+              valueType: 'int',
+            }
+          - { label: Path, name: path, widget: hidden, default: '/tym/' }
+          - {
+              label: 'Show in menu',
+              name: showInMenu,
+              widget: boolean,
+              default: true,
+            }
+          - label: 'Team Members'
+            name: 'teamMembers'
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Photo, name: photo, widget: image}
-              - {label: Specialization, name: specialization, widget: string}
-              - {label: Bio, name: bio, widget: markdown}
-  - label: "News"
-    name: "news"
-    folder: "src/content/news"
+              - { label: Name, name: name, widget: string }
+              - { label: Photo, name: photo, widget: image }
+              - { label: Specialization, name: specialization, widget: string }
+              - { label: Bio, name: bio, widget: markdown }
+  - label: 'News'
+    name: 'news'
+    folder: 'src/content/news'
     create: true
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Show", name: show, widget: boolean, default: true}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Show', name: show, widget: boolean, default: true }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
