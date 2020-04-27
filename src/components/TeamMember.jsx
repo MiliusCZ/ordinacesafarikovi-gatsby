@@ -16,7 +16,7 @@ export const TeamMember = ({ data, index }) => (
     </div>
     <div className="description">
       <h3>
-        <Link to={`/tym/${index}/`}>{data.memberName}</Link>
+        <Link to={`/tym/${index}/`}>{data.memberName || data.name}</Link>
       </h3>
       <span>{data.specialization}</span>
     </div>
