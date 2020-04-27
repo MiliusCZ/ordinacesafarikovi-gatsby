@@ -3,6 +3,7 @@ backend:
   branch: master
 
 site_url: https://www.ordinacesafarikovi.cz
+logo_url: https://www.ordinacesafarikovi.cz/img/cms-logo.png
 
 media_folder: static/img
 public_folder: /img
