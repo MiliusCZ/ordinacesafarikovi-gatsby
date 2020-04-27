@@ -2,6 +2,7 @@ const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 const teamData = require('./src/content/team.json');
+const galleryData = require('./src/content/gallery.json');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
@@ -27,18 +28,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
 
     const photoParsed = path.parse(photo);
 
-    const absolutePath = path.resolve(
-      __dirname,
-      './static/img',
-      photoParsed.base
-    );
-
-    const imageData = {
-      name: photoParsed.name,
-      ext: photoParsed.ext,
-      absolutePath,
-      extension: photoParsed.ext.substring(1),
-    };
+    const imageData = createImageData(photoParsed);
 
     const node = {
       memberName: name,
@@ -54,6 +44,38 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
 
     actions.createNode(node);
   });
+
+  galleryData.galleryImages.forEach((galleryImage) => {
+    const galleryImageParsed = path.parse(galleryImage);
+
+    const imageData = createImageData(galleryImageParsed);
+
+    const node = {
+      ...imageData,
+      id: createNodeId(`galleryImage-${galleryImageParsed.name}`),
+      internal: {
+        type: 'GalleryImage',
+        contentDigest: createContentDigest(galleryImage),
+      },
+    };
+
+    actions.createNode(node);
+  });
+};
+
+const createImageData = (parsedImage) => {
+  const absolutePath = path.resolve(
+    __dirname,
+    './static/img',
+    parsedImage.base
+  );
+
+  return {
+    name: parsedImage.name,
+    ext: parsedImage.ext,
+    absolutePath,
+    extension: parsedImage.ext.substring(1),
+  };
 };
 
 exports.createPages = ({ graphql, actions }) => {
