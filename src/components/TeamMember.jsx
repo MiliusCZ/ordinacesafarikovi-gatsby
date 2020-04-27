@@ -9,7 +9,10 @@ import './TeamMember.scss';
 export const TeamMember = ({ data, index }) => (
   <div className="teamMember">
     <div className="imgContainer">
-      <Img fluid={data.childImageSharp.fluid} alt={data.memberName} />
+      {data.childImageSharp && data.childImageSharp.fluid && (
+        <Img fluid={data.childImageSharp.fluid} alt={data.memberName} />
+      )}
+      {data.photo && !data.childImageSharp && <img src={data.photo} />}
     </div>
     <div className="description">
       <h3>

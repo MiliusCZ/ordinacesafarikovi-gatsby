@@ -8,8 +8,6 @@ import CMS from 'netlify-cms-app';
 const TeamMemberPreview = ({ widgetsFor }) => (
   <div>
     {widgetsFor('teamMembers').map((member) => {
-      console.log(member);
-
       const memberData = {
         name: member.getIn(['data', 'name']),
         photo: member.getIn(['data', 'photo']),
