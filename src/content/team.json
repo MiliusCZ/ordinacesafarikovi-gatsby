@@ -72,6 +72,12 @@
       "bio": "Od 1.1.2019 Ordinace Šafaříkovi"
     },
     {
+      "name": "Bc. Marcela Žandová",
+      "photo": "/img/jana.jpg",
+      "specialization": "dentální hygienistka",
+      "bio": "od 9/2020"
+    },
+    {
       "name": "Jiřina Fochtová",
       "photo": "/img/FochtováJiřina.jpg",
       "specialization": "recepční",
@@ -96,10 +102,10 @@
       "bio": "od 9/2020"
     },
     {
-      "name": "Bc. Marcela Žandová",
-      "photo": "/img/jana.jpg",
-      "specialization": "dentální hygienistka",
-      "bio": "od 9/2020"
+      "name": "Kateřina Zejmonová",
+      "photo": "/img/zdenka.jpg",
+      "specialization": "asistentka",
+      "bio": "od 3/2020"
     }
   ]
 }
