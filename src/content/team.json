@@ -88,6 +88,12 @@
       "photo": "/img/NěrgešMartin.jpg",
       "specialization": "IT specialista",
       "bio": "IT consulting\r\n\nSpecializace: IT poradenství a optimalizace,\r\n\nPHP, MySQL, MSAccess, web, EZS, 2N technologie,\r\n\nStrukturované kabeláže, Kamerové systémy,\r\n\nMAC systémy, Windows systémy."
+    },
+    {
+      "name": "Barbora Čepičková",
+      "specialization": "asistentka, recepční",
+      "photo": "/img/zdenka.jpg",
+      "bio": "od 9/2020"
     }
   ]
 }
