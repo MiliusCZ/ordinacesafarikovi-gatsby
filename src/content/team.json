@@ -112,6 +112,12 @@
       "photo": "/img/NěrgešMartin.jpg",
       "specialization": "IT specialista",
       "bio": "IT consulting\r\n\nSpecializace: IT poradenství a optimalizace,\r\n\nPHP, MySQL, MSAccess, web, EZS, 2N technologie,\r\n\nStrukturované kabeláže, Kamerové systémy,\r\n\nMAC systémy, Windows systémy."
+    },
+    {
+      "name": "MDDr. Dugová Lenka",
+      "photo": "/img/jana.jpg",
+      "specialization": "stomatochirurgie a implantologie",
+      "bio": "od 10/2019"
     }
   ]
 }
