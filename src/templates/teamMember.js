@@ -39,7 +39,7 @@ export const query = graphql`
           specialization
           bio
           childImageSharp {
-            fixed(width: 180, height: 270) {
+            fixed(width: 180, height: 180) {
               ...GatsbyImageSharpFixed
             }
           }

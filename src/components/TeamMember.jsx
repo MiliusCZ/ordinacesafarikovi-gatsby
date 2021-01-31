@@ -10,7 +10,9 @@ export const TeamMember = ({ data, index }) => (
   <div className="teamMember">
     <div className="imgContainer">
       {data.childImageSharp && data.childImageSharp.fluid && (
-        <Img fluid={data.childImageSharp.fluid} alt={data.memberName} />
+        <Link to={`/tym/${index}/`}>
+          <Img fluid={data.childImageSharp.fluid} alt={data.memberName} />
+        </Link>
       )}
       {data.photo && !data.childImageSharp && <img src={data.photo} />}
     </div>

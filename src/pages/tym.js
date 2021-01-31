@@ -39,7 +39,7 @@ export const query = graphql`
           specialization
           bio
           childImageSharp {
-            fluid(maxWidth: 50) {
+            fluid(maxWidth: 200, maxHeight: 200) {
               ...GatsbyImageSharpFluid
             }
           }
